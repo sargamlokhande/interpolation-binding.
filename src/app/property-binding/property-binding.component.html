@@ -1,0 +1,40 @@
+<div class="container">
+
+    <!-- ROW-4 -->
+    <div class="row">
+        <div class="col-lg-12">
+            <h4>Details</h4>
+        </div>
+    </div>
+
+    <!-- ROW-5 -->
+    <form class="form-horizontal" action="/action_page.php">
+        <div class="mb-3 mt-3">
+            <label for="name">Name :</label>
+            <input type="text" class="form-control form-control-sm" id="name" name="name" placeholder="Enter your name"
+                [(ngModel)]="data1" [value]=data1 [disabled]=disable><br>
+            <p class="checkout">checkout : {{data1}} </p>
+        </div>
+
+        <div class="mb-3">
+            <label for="email">Email :</label>
+            <input type="email" class="form-control form-control-sm" id="email" name="email"
+                placeholder="Enter your email" [(ngModel)]="data2" [value]=data2 [disabled]=disable><br>
+            <p class="checkout">checkout : {{data2}} </p>
+        </div>
+
+        <div class="mb-3">
+            <label for="number">Mob no :</label>
+            <input type="tel" class="form-control form-control-sm" id="number" name="number"
+                placeholder="Enter your number" [(ngModel)]="data3" [value]=data3 [disabled]=disable><br>
+            <p class="checkout">checkout : {{data3}} </p>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6">
+                <button type="button" class="btn button1" (click)="enable()">Enable Form</button>
+            </div>
+        </div>
+
+    </form>
+</div>
